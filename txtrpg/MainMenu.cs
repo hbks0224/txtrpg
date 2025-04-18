@@ -341,7 +341,7 @@ namespace txtrpg
 
         }
 
-        public static void Buy_Item()
+        public static void Buy_Item() //아이템 구매
         {
             Console.Clear();
             Dialogue.Print("상점 - 아이템 구매\n필요한 아이템을 얻을 수 있는 상점입니다.");
@@ -619,7 +619,7 @@ namespace txtrpg
             switch (rest_choice)
             {
                 case "1":
-                    if (GameInfo.PlayerGold < 500)
+                    if (GameInfo.PlayerGold < 500) // 돈없으면 빠꾸
                     {
                         Dialogue.Print("Gold가 부족합니다.");
                         Thread.Sleep(2000);
@@ -629,7 +629,7 @@ namespace txtrpg
 
                     else
                     {
-                        if (GameInfo.Health < 100)
+                        if (GameInfo.Health < 100) // 골드를 지불하고 체력 100으로 설정
                         {
                             GameInfo.PlayerGold -= 500;
                             GameInfo.Health = 100;
@@ -642,7 +642,7 @@ namespace txtrpg
                         }
                         else
                         {
-                            Dialogue.Print("체력이 충분하기 때문에 휴식을 할 수 없습니다.");
+                            Dialogue.Print("체력이 충분하기 때문에 휴식을 할 수 없습니다."); 
                             Thread.Sleep(2000);
                             Rest();
 

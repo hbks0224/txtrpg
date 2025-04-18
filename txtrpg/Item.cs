@@ -16,6 +16,7 @@ public class Item_Stat //아이템 스탯 클래스
     public int Defense;
     public int Health;
 
+    //묶어서 Item_Stat으로 관리
     public Item_Stat(int attack, int defense, int health)
     {
         Attack = attack;
@@ -61,11 +62,11 @@ internal class Item
         Item shop_item6 = new Item("드래곤 갑옷", new Item_Stat(0, 30, 0), "전설의 용 비늘로 만든 갑옷", false, 700, "Armor");
 
 
-
+        //인벤토리 추가
         GameInfo.inventory.Add(test_item1);
         GameInfo.inventory.Add(test_item2);
         GameInfo.inventory.Add(test_item3);
-
+        //상점 추가
         GameInfo.shop.Add(shop_item1);
         GameInfo.shop.Add(shop_item2);
         GameInfo.shop.Add(shop_item3);
@@ -104,7 +105,7 @@ internal class Item
         return realstat;
     }
 
-
+    //장착
     public  void Equip()
     {
         if (!IsEquipped)
@@ -147,7 +148,7 @@ internal class Item
         }
 
     }
-
+    //해제
     public void Unequip()
     {
         if (IsEquipped)

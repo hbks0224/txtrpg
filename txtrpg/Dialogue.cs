@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace txtrpg
 {
-    internal class Dialogue
+    internal class Dialogue //메세지 출력
     {
         public static void Print(String message)
         {

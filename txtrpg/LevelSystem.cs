@@ -15,7 +15,7 @@ namespace txtrpg
 
             while (GameInfo.EXP >= EXPMAX) {
 
-
+                //레벨업을 했다면 경험치에서 100을 빼고 레벨up
                 GameInfo.PlayerLevel++;
                 GameInfo.Attack += 0.5;
                 GameInfo.Defense += 1;

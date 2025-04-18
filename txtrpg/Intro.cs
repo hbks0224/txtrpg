@@ -129,7 +129,7 @@ namespace txtrpg
                 job = "마법사";
             else if (Archer_point > Warrior_point && Archer_point > Wizard_point)
                 job = "궁수";
-
+            // 포인트가 같을 경우 처리
             else if (Warrior_point == Wizard_point)
             {
                 Dialogue.Print("\n두 직업이 동일한 성향을 보입니다. 당신의 선택은?");

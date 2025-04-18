@@ -355,11 +355,11 @@ namespace txtrpg
 
             Console.Clear(); // 새로운 화면
 
-            Intro.name();
+            Intro.name(); // 이름 정하기
             Thread.Sleep(3000);
             Console.Clear();
-            Intro.Choose_Class();
-            MainMenu.Display();
+            Intro.Choose_Class();//직업 정하기
+            MainMenu.Display();// 메인 메뉴
             Console.ReadKey();
 
 

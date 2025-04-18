@@ -16,7 +16,7 @@ namespace txtrpg
         public static double Defense; // 캐릭터 방어력
         public static double Health; // 캐릭터 체력
         public static double PlayerGold = 10000; // 캐릭터 골드
-        public static double ItemGoold;
+        public static double ItemGoold; //아이템 골드
         public static List<Item> shop = new List<Item>();// 상점
         public static int EXP = 0; //경험치
 
